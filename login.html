@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>LOGIN PAGE</title>
+    </head>
+    <body bgcolor="pink">
+    <form>
+     username:
+     <center> <input type="username" name="name" id="uname"><br><br></center>
+     password:
+     <center> <input type="password" name="password" id="pwd"><br><br></center>
+      Gender:                                                                                                                                                                            
+     <center> <input type="radio" name = "gender"value="male"></center>
+     <center><input type="radio" name = "gender" value="female"></center>
+     <center><input type="button" value="submit" onclick="validate()"><br><br></center>
+     </form>
+     <script>
+        function  validate()
+        {
+          var u=document.getElementById('uname').value;
+          var p=document.getElementById('pwd').value;
+          if(u==''||p=='')
+          {
+            alert("please enter username and password");
+          }
+          else
+          {
+            alert("login success");
+          }
+          }
+          </script>
+          </body>
+          </html>
+
+     </script>
